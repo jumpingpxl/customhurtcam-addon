@@ -1,0 +1,22 @@
+{
+  "customhurtcam": {
+    "settings": {
+      "name": "CustomHurtCam",
+      "enabled": {
+        "name": "Enabled"
+      },
+      "showDamageTilt": {
+        "name": "Show Damage Tilt"
+      },
+      "directionalDamageTilt": {
+        "name": "Directional Damage Tilt",
+        "description": "Disable this if you want to disable the directional damage tilt reintroduced in 1.19.4"
+      },
+      "header": {
+        "damageTilt": {
+          "name": "Damage Tilt"
+        }
+      }
+    }
+  }
+}

@@ -10,11 +10,11 @@ version = "1.0.0"
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 
 labyMod {
-    defaultPackageName = "org.example" //change this to your main package name (used by all modules)
+    defaultPackageName = "dev.jumpingpxl.addons.customhurtcam" //change this to your main package name (used by all modules)
     addonInfo {
-        namespace = "example"
-        displayName = "ExampleAddon"
-        author = "Example Author"
+        namespace = "customhurtcam"
+        displayName = "CustomHurtCam"
+        author = "JumpingPxl"
         description = "Example Description"
         minecraftVersion = "*"
         version = System.getenv().getOrDefault("VERSION", "0.0.1")
@@ -29,7 +29,8 @@ labyMod {
                 "1.18.2",
                 "1.19.2",
                 "1.19.3",
-                "1.19.4"
+                "1.19.4",
+                "1.20"
         ) { version, provider ->
             configureRun(provider, version)
         }
@@ -42,7 +43,7 @@ labyMod {
     }
 
     addonDev {
-        snapshotRelease()
+        internalRelease()
     }
 }
 
