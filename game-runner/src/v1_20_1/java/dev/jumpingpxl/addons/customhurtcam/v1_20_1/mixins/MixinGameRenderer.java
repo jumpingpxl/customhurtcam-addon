@@ -1,4 +1,4 @@
-package dev.jumpingpxl.addons.customhurtcam.v1_20.mixins;
+package dev.jumpingpxl.addons.customhurtcam.v1_20_1.mixins;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.jumpingpxl.addons.customhurtcam.core.CustomHurtCam;
