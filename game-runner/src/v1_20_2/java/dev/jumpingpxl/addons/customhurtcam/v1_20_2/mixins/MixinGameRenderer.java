@@ -35,7 +35,7 @@ public class MixinGameRenderer {
       )
   )
   public float customHurtCam$getDamageTilt(LivingEntity livingEntity) {
-    if (!CustomHurtCam.get().configuration().enabledDirectionalDamageTilt()) {
+    if (CustomHurtCam.get().configuration().disabledDirectionalDamageTilt()) {
       return 0F;
     }
 
