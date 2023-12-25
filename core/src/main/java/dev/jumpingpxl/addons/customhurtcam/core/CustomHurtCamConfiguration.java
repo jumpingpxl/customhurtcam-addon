@@ -28,23 +28,11 @@ public class CustomHurtCamConfiguration extends AddonConfig {
     return this.enabled;
   }
 
-  public ConfigProperty<Boolean> showDamageTilt() {
-    return this.showDamageTilt;
-  }
-
-  public ConfigProperty<Boolean> directionalDamageTilt() {
-    return this.directionalDamageTilt;
-  }
-
-  public boolean enabledDamageTilt() {
-    return this.enabled.get() && this.showDamageTilt.get();
-  }
-
   public boolean disabledDamageTilt() {
     return this.enabled.get() && !this.showDamageTilt.get();
   }
 
   public boolean enabledDirectionalDamageTilt() {
-    return this.directionalDamageTilt.get();
+    return this.enabled.get() && this.directionalDamageTilt.get();
   }
 }
